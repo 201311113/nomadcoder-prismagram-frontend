@@ -10,7 +10,7 @@ import {
  } from "./AuthQueries";
 import {toast} from "react-toastify";
 
-
+//Contanier, Presenter, Query로 나누어하는게 컨테이너 프레젠트 패턴
 export default () => {
   const [action, setAction] = useState("logIn");
   const username = useInput("");
@@ -49,6 +49,7 @@ export default () => {
           const{
             data: {requestSecret}
           } = await requestSecretMutation();
+          console.log(requestSecret);
           if(!requestSecret){
             toast.error("You don't hanve an account yet, create one");
             setTimeout(()=> setAction("signUp"),3000);
