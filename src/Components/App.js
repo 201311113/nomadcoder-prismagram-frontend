@@ -27,7 +27,6 @@ export default () =>{
   const {
     data:{isLoggedIn}
   } = useQuery(QUERY);
-  console.log(isLoggedIn, "log");
   return (
   <ThemeProvider theme = {Theme}>
     <>

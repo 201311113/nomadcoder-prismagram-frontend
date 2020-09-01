@@ -7,12 +7,14 @@ export const SEARCH = gql`
         url
       }
       likeCount
+      commentCount
     }
     searchUser(term: $term) {
-      avatar
-      username
-      isFollowing
-      isSelf
+        id
+        avatar
+        username
+        isFollowing
+        isSelf
     }
   }
 `;

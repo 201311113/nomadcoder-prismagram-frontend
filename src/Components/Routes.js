@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import Auth from "../Routes/Auth";
 import Feed from "../Routes/Feed";
 import Explore from "../Routes/Explore";
-import Search from "../Routes/Search";
+import Search from "../Routes/Search/index";
 import Profile from "../Routes/Profile";
 
 //explore를 username보다 앞에다 둔 이유는 edit-profile로 가는 사람도
